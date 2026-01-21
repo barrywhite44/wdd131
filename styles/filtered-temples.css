@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    background-color: rgba(235, 226, 226, 0.747);
+    color: rgb(114, 24, 24);
+    line-height: 1.3;
+}
+h1{
+    font-weight: 100;
+}
+header{
+    background-color: rgb(6, 20, 97);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    height: 5rem;
+}
+header img{
+    border-radius: 50%;
+    width: 3rem;
+}
+/* header b em{
+    margin-left: 50px;
+    font-size: xx-large;
+} */
+
+#navBtn{
+   display: flex;
+   margin-left: 180px;
+   font-size: x-large;
+}
+
+ #nav{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    padding: 0 1rem;
+    border-radius: 10px;
+    transition: max-height 1s ease-out;
+    
+ }
+ #nav.active{
+    box-shadow: 3px 3px 3px 3px rgb(255, 0, 0);
+    max-height: 300px;
+    transition: max-height 1s ease-in;
+ }
+#nav a{
+        color: rgb(18, 139, 245);
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin: 0.5rem 1rem;
+    }
+#nav a:hover{
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+    }
+section{
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    background-color: rgb(233, 233, 240);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.image:hover{
+    width: 370px;
+
+}
+figure{
+    background-color: rgba(240, 238, 238, 0.555);
+    width: 400px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.616);
+}
+#fig{
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+figure:hover{
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.616);
+    transform: scale(1.05);
+    transition: transform 0.7s ease-in-out;
+    color: rgb(255, 0, 0);
+}
+footer{
+    background-color: rgb(6, 20, 97);
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+figure img {
+    width: 100%;
+    height: 200px;         /* Adjust this number to control height */
+    object-fit: cover;     /* Keeps the image nicely cropped */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+

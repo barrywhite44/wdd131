@@ -1,0 +1,42 @@
+ /* styles/temples-large.css */
+@media (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    #nav{
+      max-height: none !important;
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        overflow: visible;
+    }
+    #navBtn{
+        display: none;
+    }
+
+ #nav a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10rem;
+    padding: 3rem;
+}
+#nav a:hover{
+    color: aquamarine;
+    font-weight: bold;
+}
+#fig{
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+main > h1,
+main > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+} 
+}
